@@ -14,6 +14,7 @@ import (
 	//"time"
 )
 
+
 func SHA256(data []byte) []byte {
 
 	hash := sha256.New()
@@ -24,3 +25,11 @@ func SHA256(data []byte) []byte {
 func SHAString(data []byte) string {
 	return fmt.Sprintf("%x", data)
 }
+
+// func CheckProofOfWork(prefix []byte, hash []byte) bool {
+
+// 	if len(prefix) > 0 {
+// 		return reflect.DeepEqual(prefix, hash[:len(prefix)])
+// 	}
+// 	return true
+// }

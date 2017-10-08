@@ -1,10 +1,9 @@
 package core
 
-
-type Block struct{
+type Block struct {
 	*BlockHeader
 	Signature []byte
-	*TransactionSlice
+	// *TransactionSlice
 }
 
 type BlockHeader struct {
