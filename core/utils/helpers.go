@@ -25,6 +25,8 @@ func FitBytesInto(d []byte, i int) []byte {
 }
 
 func StripByte(d []byte, b byte) []byte {
+	// Given a byte with b padding
+	// functions returns the bytes with padding stripped
 
 	for i, bb := range d {
 
